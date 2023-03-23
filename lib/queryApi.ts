@@ -54,7 +54,7 @@ const query = async (
                 new Promise((resolve, reject) => {
                     setTimeout(() => {
                         reject(new Error("Request timed out"));
-                    }, 30000); // Timeout after 30 seconds
+                    }, 60000); // Timeout after 60 seconds
                 }),
             ]);
 
@@ -76,7 +76,7 @@ const query = async (
                 new Promise((resolve, reject) => {
                     setTimeout(() => {
                         reject(new Error("Request timed out"));
-                    }, 30000); // Timeout after 30 seconds
+                    }, 60000); // Timeout after 60 seconds
                 }),
             ]);
 
