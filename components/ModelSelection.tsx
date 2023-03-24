@@ -12,9 +12,12 @@ function ModelSelection() {
     });
 
     return (
-        <div className="mt-2">
+        <div className="flex flex-row items-center justify-center sm:my-4">
+            <div className="flex text-white mx-2">
+                <p>Model:</p>
+            </div>
             <Select
-                className="mt-2"
+                className="flex-1"
                 options={models?.modelOptions}
                 defaultValue={model}
                 placeholder={model}
@@ -22,7 +25,7 @@ function ModelSelection() {
                 isLoading={isLoading}
                 menuPosition="fixed"
                 classNames={{
-                    control: (state) => "bg-[#434654] border-[#434654]",
+                    control: (state) => "border-[#434654]",
                 }}
                 onChange={(e) => setModel(e.value)}
             />
