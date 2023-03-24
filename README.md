@@ -3,7 +3,7 @@
 
 ### Introduction
 
-A Next.js application built using Next.js, Tailwind CSS, Firebase and OpenAI API. The project is a customised ChatGPT messenger deployed using AWS Amplify.
+A Next.js application built using Next.js, Tailwind CSS, Firebase and OpenAI API. It is a customized ChatGPT messenger deployed using AWS Amplify.
 
 <br />
 Website: https://main.dwy8khwj2eb3o.amplifyapp.com/
