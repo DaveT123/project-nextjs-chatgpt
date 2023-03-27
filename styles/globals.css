@@ -14,4 +14,22 @@
     .code-block {
         @apply bg-gray-300 border-gray-500 border-2 rounded-md text-black py-2 px-4 my-5 whitespace-pre-wrap;
     }
+
+    .message-text p,
+    .message-text li {
+        @apply pb-5;
+    }
+
+    .message-text ul,
+    .message-text ol {
+        @apply pl-4;
+    }
+
+    .message-text ul li {
+        @apply list-disc pl-2;
+    }
+
+    .message-text ol li {
+        @apply list-decimal pl-2;
+    }
 }

@@ -46,7 +46,7 @@ function Message({ message }: Props) {
             <div className="flex space-x-5 sm:px-10 pr-10 max-w-xs md:max-w-2xl  mx-auto">
                 <img src={message.user.avatar} alt="" className="h-8 w-8" />
                 <p
-                    className="pt-1 text-sm w-full"
+                    className="pt-1 text-sm w-full message-text"
                     dangerouslySetInnerHTML={{
                         __html: formatMessage(message.text),
                     }}
