@@ -16,8 +16,13 @@
     }
 
     .message-text p,
-    .message-text li {
+    .message-text li,
+    .message-text h3 {
         @apply pb-5;
+    }
+
+    .message-text table {
+        @apply mb-5;
     }
 
     .message-text ul,
@@ -34,7 +39,8 @@
     }
 
     .message-text th,
-    .message-text tr td:first-child {
+    .message-text tr td:first-child,
+    .message-text h3 {
         @apply font-bold;
     }
 
