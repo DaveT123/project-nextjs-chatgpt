@@ -1,7 +1,6 @@
 import Chat from "@/components/Chat";
 import ChatInput from "@/components/ChatInput";
 import CollapseSideBar from "@/components/CollapseSideBar";
-import RefreshPage from "@/components/RefreshPage";
 
 type Props = {
     params: {
@@ -12,7 +11,6 @@ type Props = {
 function ChatPage({ params: { id } }: Props) {
     return (
         <div className="flex flex-col h-screen overflow-hidden">
-            <RefreshPage chatId={id} />
             <CollapseSideBar />
             <Chat chatId={id} />
             <ChatInput chatId={id} />
