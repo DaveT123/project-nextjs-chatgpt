@@ -5,7 +5,6 @@ import { getServerSession } from "next-auth";
 import "../styles/globals.css";
 import { authOptions } from "../pages/api/auth/[...nextauth]";
 import ClientProvider from "@/components/ClientProvider";
-import { Bars3Icon } from "@heroicons/react/24/outline";
 
 export const metadata = {
     title: "ChatGPT Messenger",

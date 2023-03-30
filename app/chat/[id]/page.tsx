@@ -1,7 +1,6 @@
 import Chat from "@/components/Chat";
 import ChatInput from "@/components/ChatInput";
 import CollapseSideBar from "@/components/CollapseSideBar";
-import SideBar from "@/components/SideBar";
 
 type Props = {
     params: {

@@ -21,6 +21,7 @@ export default function NewChat() {
         );
 
         router.push(`/chat/${doc.id}`);
+        router.refresh();
     };
 
     return (
