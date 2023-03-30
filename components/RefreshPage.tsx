@@ -17,7 +17,8 @@ function RefreshPage({ chatId }: Props) {
         if (!reloadCount) {
             sessionStorage.setItem(chatId, "reloaded");
             const reloadCount = sessionStorage.getItem("reloadCount");
-            router.replace(`/chat/${chatId}`);
+            console.log("executed");
+            window.location.replace(`/chat/${chatId}`);
         }
     }, []);
 
