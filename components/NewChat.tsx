@@ -22,7 +22,7 @@ export default function NewChat() {
 
         router.push(`/chat/${doc.id}`);
         router.replace("/");
-        router.replace(`/chat/${doc.id}`);
+        router.push(`/chat/${doc.id}`);
     };
 
     return (
