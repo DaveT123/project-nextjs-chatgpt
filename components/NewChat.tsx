@@ -10,6 +10,10 @@ export default function NewChat() {
     const router = useRouter();
     const { data: session } = useSession();
 
+    const delay = (time: number) => {
+        return new Promise((resolve) => setTimeout(resolve, time));
+    };
+
     const createNewChat = async () => {
         const doc = await addDoc(
             collection(db, "users", session?.user?.email!, "chats"),
@@ -19,6 +23,9 @@ export default function NewChat() {
                 createdAt: serverTimestamp(),
             }
         );
+
+        await delay(1000);
+        router.push(`/chat/${doc.id}`);
     };
 
     return (
