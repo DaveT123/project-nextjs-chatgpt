@@ -24,7 +24,7 @@ export default function NewChat() {
             }
         );
 
-        await delay(1000);
+        await delay(2000);
         router.push(`/chat/${doc.id}`);
     };
 
