@@ -20,8 +20,9 @@ export default function NewChat() {
             }
         );
 
-        router.prefetch(`/chat/${doc.id}`);
         router.push(`/chat/${doc.id}`);
+        router.replace(`/chat/${doc.id}`);
+        router.refresh();
     };
 
     return (
