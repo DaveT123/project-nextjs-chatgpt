@@ -9,10 +9,10 @@ export default function Home() {
     return (
         <div className="flex flex-col items-center justify-center h-screen text-white">
             <CollapseSideBar />
-            <h1 className="text-5xl font-bold sm:mb-20 my-5">ChatGPT</h1>
+            <h1 className="text-5xl font-bold sm:mb-10 my-5">ChatGPT</h1>
             <div className="flex flex-wrap items-center justify-center overflow-auto space-x-2 text-center py-8">
                 <div>
-                    <div className="flex flex-col items-center justify-center mb-5">
+                    <div className="flex flex-col items-center justify-center mb-5 pt-5">
                         <SunIcon className="h-8 w-8" />
                         <h2>Examples</h2>
                     </div>
@@ -32,7 +32,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div>
-                    <div className="flex flex-col items-center justify-center mb-5">
+                    <div className="flex flex-col items-center justify-center mb-5 pt-5">
                         <BoltIcon className="h-8 w-8" />
                         <h2>Capabilities</h2>
                     </div>
@@ -49,7 +49,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div>
-                    <div className="flex flex-col items-center justify-center mb-5">
+                    <div className="flex flex-col items-center justify-center mb-5 pt-5">
                         <ExclamationTriangleIcon className="h-8 w-8" />
                         <h2>Examples</h2>
                     </div>
