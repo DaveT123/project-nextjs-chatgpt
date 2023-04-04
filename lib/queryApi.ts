@@ -39,7 +39,8 @@ const query = async (
             // if the previous content is too long, remove the oldest ones
             let lengthOfReqMessage = JSON.stringify(reqMessage).length;
 
-            while (lengthOfReqMessage > 3000) {
+            // 1 token = 4 characters. set limit at 95% (max 4096 tokens) to cater tokens for completion
+            while (lengthOfReqMessage > 15500) {
                 reqMessage.shift();
                 lengthOfReqMessage = JSON.stringify(reqMessage).length;
             }
